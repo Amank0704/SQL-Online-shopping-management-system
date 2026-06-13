@@ -43,5 +43,21 @@ FROM product p
 JOIN category c
 ON p.category_id = c.category_id
 WHERE c.category_name IN ('Electronics','Clothing');
+
+
+
 -- 19. Increase the price of product 'Laptop' to 55000. 
+UPDATE product
+SET price = 55000
+WHERE product_name = 'Dell Laptop';
+
+-- verify
+SELECT *
+FROM product
+WHERE product_name = 'Dell Laptop';
+
+
 -- 20. List products sorted by product name in ascending order.
+SELECT *
+FROM product
+ORDER BY product_name ASC;
