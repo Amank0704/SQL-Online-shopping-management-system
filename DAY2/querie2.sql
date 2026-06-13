@@ -30,7 +30,18 @@ FROM product;
 
 
 
--- 17. Calculate the average price of all products. 
+-- 17. Calculate the average price of all products.
+SELECT ROUND(AVG(price),2) AS Average_Price
+FROM product;
+
+
 -- 18. Find products belonging to 'Electronics' or 'Clothing' category. 
+SELECT p.product_name,
+       c.category_name,
+       p.price
+FROM product p
+JOIN category c
+ON p.category_id = c.category_id
+WHERE c.category_name IN ('Electronics','Clothing');
 -- 19. Increase the price of product 'Laptop' to 55000. 
 -- 20. List products sorted by product name in ascending order.
