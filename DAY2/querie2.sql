@@ -4,7 +4,12 @@ SELECT * FROM category;
 
 -- 12. List all products with price greater than 150. 
 SELECT * FROM product WHERE price > 150;
+
+
 -- 13. Find products priced between 100 and 180. 
+SELECT * FROM product WHERE price BETWEEN 100 AND 180;
+
+
 -- 14. Display product name and price of all products. 
 -- 15. Count the number of products in each category. 
 -- 16. Find the maximum and minimum product price. 
