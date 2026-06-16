@@ -22,7 +22,7 @@ SET inv_date = '2023-08-16'
 WHERE inv_no = 'I07';
 
 -- verify 
-SELECT * FROM invoice amount
+SELECT * FROM invoice
 WHERE inv_no = 'I07';
 
 
